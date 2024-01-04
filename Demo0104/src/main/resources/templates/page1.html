@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p1</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div style="background:#adadad;width: 500px;">
+<div id="d01" style="width: 500px;height: 150px;background: #0bfc90 "></div>
+    <div id="d03" style="width: 500px;height: 150px;background: aquamarine "></div>
+</div>
+<button onclick="DDateTime">點我1</button>
+
+
+<div id="d02" style="width: 500px;height: 150px;background: #f3c1f6 "></div>
+<button onclick="DDateTime">點我2 </button>
+
+
+</body>
+<script>
+
+        setInterval(DDateTime,1000)
+
+    function DDateTime(){
+        $('#d01').load('http://127.0.0.1:8080/p02')
+        $('#d03').load('http://127.0.0.1:8080/p02')
+        $('#d02').load('http://127.0.0.1:8080/p03')
+    }
+</script>
+</html>
