@@ -38,6 +38,5 @@ public class Mcontrl
     public String main03(){
         java.util.Random random=new Random();
         return "<h3>這是從伺服器下載的內容02...亂數10000!</h3>"+ random.nextInt(10000);
-
     }
 }
